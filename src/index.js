@@ -4,11 +4,14 @@ import 'jquery/dist/jquery.min';
 import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min.js'
 import '@fortawesome/fontawesome-free/js/all.min'
+import { data } from 'jquery';
 
-$(document).ready(function(){
+$(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
     $('.add-to-cart-btn').click(function(){
         alert("أضيف المُنتج إلى عربة الشراء");
     });
+
+    $("#copyright").text(" جميع الحقوق محفوظة للمتجر سنة "   + new Date().getFullYear());
 });
