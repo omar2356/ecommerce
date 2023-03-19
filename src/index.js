@@ -5,6 +5,9 @@ import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "@fortawesome/fontawesome-free/js/all.min";
 import { data } from "jquery";
+import 'webpack-jquery-ui'
+import 'webpack-jquery-ui/css'
+import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
@@ -104,5 +107,18 @@ $(document).ready(function () {
     }
       // بدل معلومات بطاقة الائتمان بين الظهور والاخفاء 
     $('#credit-card-info').toggle();
-  })
+  });
+
+
+    $( "#price-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      step:50,
+      values: [ 250, 800 ],
+      slide: function( event, ui ) {
+        $( "#price-min" ).text(ui.values[0]);
+        $( "#price-max" ).text(ui.values[1])
+      }
+    });
 });
