@@ -124,7 +124,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
 
-      template: "./src/index.html",
+      template: "/src/index.html",
 
     }),
 
@@ -132,35 +132,35 @@ module.exports = {
       new HtmlWebpackPlugin({
         filename: "product.html",
   
-        template: "./src/product.html",
+        template: "/src/product.html",
   
       }),
 
       new HtmlWebpackPlugin({
         filename: "payment.html",
   
-        template: "./src/payment.html",
+        template: "/src/payment.html",
   
       }),
 
       new HtmlWebpackPlugin({
         filename: "checkout.html",
   
-        template: "./src/checkout.html",
+        template: "/src/checkout.html",
   
       }),
 
       new HtmlWebpackPlugin({
         filename: "search.html",
   
-        template: "./src/search.html",
+        template: "/src/search.html",
   
       }),
 
       new HtmlWebpackPlugin({
         filename: "contact.html",
   
-        template: "./src/contact.html",
+        template: "/src/contact.html",
   
       }),
 
